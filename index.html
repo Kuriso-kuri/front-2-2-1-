@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка товара — Практика SASS/LESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-card">
+        <img src="iasha.jpg" alt="Друг(1)" class="product-card__image">
+        <h3 class="product-card__title">Другалек 2</h3>
+        <p class="product-card__description">Мощный друг для игр и работы.</p>
+        <p class="product-card__price">100р</p>
+        <button class="product-card__button">В корзину</button>
+    </div>
+
+    <div class="product-card">
+        <img src="varya(2).jpg" alt="Игровая мышь" class="product-card__image">
+        <h3 class="product-card__title">лпшка 1</h3>
+        <p class="product-card__description">Легкий на подъем мсмк по жиму лежа.</p>
+        <p class="product-card__price">кв на фрунзе</p>
+        <button class="product-card__button">В корзину</button>
+    </div>
+
+    <div class="product-card">
+        <img src="anton.jpg" alt="Механическая клавиатура" class="product-card__image">
+        <h3 class="product-card__title">Товарищ 1</h3>
+        <p class="product-card__description">Подружится со всеми, а зачем - непонятно.</p>
+        <p class="product-card__price">30р</p>
+        <button class="product-card__button">В корзину</button>
+    </div>
+    </div>
+
+    <script>
+        const button = document.querySelector('.product-card__button');
+        button.addEventListener('click', function() {
+            alert('Получите, распишитесь.');
+        });
+    </script>
+</body>
+</html>
